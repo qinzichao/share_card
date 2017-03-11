@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/template/template",
+    "pages/my/my",
+    "pages/see_collect/see_collect",
+    "pages/see_love/see_love",
+    "pages/see_view/see_view",
     "pages/other/other",
     "pages/collect/collect",
-    "pages/my/my",
-    
-    
-    "pages/edit/edit",
-    "pages/template/template"
+    "pages/edit/edit"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",

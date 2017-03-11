@@ -1,0 +1,38 @@
+<scroll-view class="container" scroll-x="false" scroll-y="false">
+
+  <!--container-->
+  <view class="search-part">
+    这些人收藏了我
+  </view>
+  <block wx:if="{{searchUserList.length > 0}}">
+
+    <!--列表循环开始-->
+    <view wx:key="userList" wx:for="{{searchUserList}}" wx:for-item="user">
+
+      <!--userinfo-header-->
+      <view class="list-row" catchtap="viewCard" data-openid="{{user.openid}}">
+
+        <!--左侧-->
+        <view>
+          <image class="avatar" src="{{user.headimgurl}}" background-size="cover"></image>
+        </view>
+
+        <!--右侧-->
+        <view class="userinfo-name">
+          <view class="nickName-row">
+            <view class="nickName">{{user.nickname}}</view>
+             <image class="tel" catchtap="callPhone" data-phone="{{user.mobile}}" src="/image/tel1.png" style="width:36rpx;height:36rpx;"></image>
+
+          </view>
+          <view class="userinfo-item">{{user.company}}</view>
+        </view>
+      </view>
+
+      <!--列表循环结束-->
+    </view>
+
+    <!--if-->
+  </block>
+
+  <!--container-->
+</scroll-view>

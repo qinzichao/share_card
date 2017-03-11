@@ -41,7 +41,7 @@
   <view class="handle-row">
 
     <!--人气-->
-    <view class="handle-col-item">
+    <view class="handle-col-item" bindtap="seeViewLog">
       <image src="/image/eye2.png" style="width:40rpx;height:40rpx;"></image>
       <view class="col-info-view">
         <view class="col-info-lable">人气：</view>
@@ -50,7 +50,7 @@
     </view>
 
     <!--已赞-->
-    <view class="handle-col-item">
+    <view class="handle-col-item" bindtap="seeLoveLog">
       <image src="/image/heart2.png" style="width:36rpx;height:36rpx;"></image>
       <view class="col-info-view">
         <view class="col-info-lable">已赞：</view>
@@ -59,7 +59,7 @@
     </view>
 
     <!--收藏-->
-    <view class="handle-col-item">
+    <view class="handle-col-item" bindtap="seeCollectLog">
       <image src="/image/star2.png" style="width:36rpx;height:36rpx;"></image>
       <view class="col-info-view">
         <view class="col-info-lable">收藏：</view>

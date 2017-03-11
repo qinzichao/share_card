@@ -26,6 +26,10 @@ Page({
   //编辑名片
   editCard: function () {
 
+    // wx.switchTab({
+    //   url: '/pages/edit/edit'
+    // })
+   
     wx.navigateTo({
       url: '/pages/edit/edit'
     })
@@ -47,5 +51,30 @@ Page({
       path: share_path,
     }
   },
+
+   //查看访问记录
+  seeViewLog: function () {
+
+    wx.navigateTo({
+      url: '/pages/see_view/see_view'
+    })
+  },
+
+   //查看被喜欢记录
+  seeLoveLog: function () {
+
+    wx.navigateTo({
+      url: '/pages/see_love/see_love'
+    })
+  },
+
+   //查看访问记录
+  seeCollectLog: function () {
+
+    wx.navigateTo({
+      url: '/pages/see_collect/see_collect'
+    })
+  },
+
 
 })
