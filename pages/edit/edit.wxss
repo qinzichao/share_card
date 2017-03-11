@@ -1,0 +1,67 @@
+.container {
+  font-size: 28rpx;
+}
+
+.userinfo-header {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+  padding: 30rpx;
+  align-items: flex-end;
+  background-color: #fff;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 10%;
+}
+
+.userinfo-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.userinfo-name input {
+  height: 70rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+}
+
+.userinfo-body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+}
+
+.userinfo-row {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  padding-left: 20rpx;
+  align-items: center;
+}
+
+.userinfo-lable {
+  margin-right: 20rpx;
+}
+
+.userinfo-row input {
+  width: 80%;
+  padding-bottom: 4rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.button-row {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.button-row button {
+  width: 95%;
+  margin-bottom: 20rpx;
+}

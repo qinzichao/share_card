@@ -1,0 +1,56 @@
+<scroll-view class="container" scroll-x="false" scroll-y="false">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <!--userinfo-header-->
+    <view class="userinfo-header">
+      <view>
+        <image class="avatar" src="{{userInfo.headimgurl}}" background-size="cover"></image>
+      </view>
+
+      <!--userinfo-header-left-->
+      <view class="userinfo-name">
+        <input type="text" name="nickname" value="{{userInfo.nickname}}" placeholder="请输入姓名" />
+        <input type="text" name="mobile" value="{{userInfo.mobile}}" placeholder="请输入电话" />
+      </view>
+
+      <!--userinfo-header-right-->
+    </view>
+
+    <!--其他信息-->
+    <view class="userinfo-body">
+
+      <!--userinfo-row-->
+      <view class="userinfo-row">
+        <view class="userinfo-lable">公司<span class="font-red">*</span>  </view>
+        <input type="text" name="company" value="{{userInfo.company}}" placeholder="请输入公司" />
+      </view>
+
+      <!--userinfo-row-->
+      <view class="userinfo-row">
+        <view class="userinfo-lable">职务<span class="font-red">*</span>  </view>
+        <input type="text" name="job" value="{{userInfo.job}}" placeholder="请输入职务" />
+      </view>
+
+      <!--userinfo-row-->
+      <view class="userinfo-row">
+        <view class=" userinfo-lable">邮箱<span class="font-red">*</span>  </view>
+        <input type="text" name="email" value="{{userInfo.email}}" placeholder="请输入邮箱" />
+      </view>
+    </view>
+
+    <!--更多-->
+    <view class="userinfo-body">
+      <view class="userinfo-row" style="height:100%;min-height:200rpx;">
+        <view class=" userinfo-lable">自我介绍</view>
+        <textarea name="more_info" class="more_info" placeholder="请填写自我介绍" value="{{userInfo.more_info}}" auto-height />
+      </view>
+    </view>
+
+    <!--按钮-->
+    <view class="button-row ">
+      <button type="primary" formType="submit">保存</button>
+    </view>
+  </form>
+
+  <!--container-->
+</scroll-view>

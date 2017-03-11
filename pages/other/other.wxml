@@ -1,0 +1,103 @@
+<scroll-view class="container" scroll-x="false" scroll-y="false">
+
+  <!--用户信息-->
+  <view class="userinfo {{userInfo.template}}">
+
+    <!--userinfo-header-->
+    <view class="userinfo-header">
+
+      <!--userinfo-header-left-->
+      <view class="userinfo-name">
+        <view class="nickname">{{userInfo.nickname}}</view>
+        <view class="job font-darkgray">{{userInfo.job}}</view>
+      </view>
+
+      <!--userinfo-header-right-->
+      <view>
+        <image class="avatar" src="{{userInfo.headimgurl}}" background-size="cover"></image>
+      </view>
+    </view>
+
+    <!--userinfo-row-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray ">电话</view>
+      <view bindtap="callPhone" data-phone="{{userInfo.mobile}}" class="mobile font-sky-blue">{{userInfo.mobile}}</view>
+
+<image class="tel" catchtap="callPhone" data-phone="{{userInfo.mobile}}" src="/image/tel1.png" style="width:36rpx;height:36rpx;"></image>
+
+
+    </view>
+
+    <!--userinfo-row-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray">公司</view>
+      <view class="company">{{userInfo.company}}</view>
+    </view>
+
+    <!--userinfo-row-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray">邮箱</view>
+      <view class="email">{{userInfo.email}}</view>
+    </view>
+  </view>
+
+  <!--操作三项-->
+  <view class="handle-row">
+
+    <!--人气-->
+    <view class="handle-col-item">
+      <image src="/image/eye2.png" style="width:40rpx;height:40rpx;"></image>
+      <view class="col-info-view">
+        <view class="col-info-lable">人气：</view>
+        <view class="col-info-text">{{userInfo.views}}</view>
+      </view>
+    </view>
+
+    <!--已赞-->
+    <view class="handle-col-item">
+      <block wx:if="{{config.showLove ==1}}">
+        <image src="/image/heart2.png" style="width:36rpx;height:36rpx;" data-loves="{{userInfo.loves}}" data-openid="{{userInfo.openid}}" bindtap="loveCard"> </image>
+      </block>
+      <block wx:if="{{config.showLove ==0}}">
+        <image src="/image/heart1.png" style="width:36rpx;height:36rpx;" data-loves="{{userInfo.loves}}" data-openid="{{userInfo.openid}}" bindtap="cancelLoveCard"> </image>
+      </block>
+      <view class="col-info-view">
+        <view class="col-info-lable">已赞：</view>
+        <view class="col-info-text">{{userInfo.loves}}</view>
+      </view>
+    </view>
+
+    <!--收藏-->
+    <view class="handle-col-item">
+      <block wx:if="{{config.showCollect ==1}}">
+        <image src="/image/star2.png" style="width:36rpx;height:36rpx;" data-collects="{{userInfo.collects}}" data-openid="{{userInfo.openid}}" bindtap="collectCard"> </image>
+      </block>
+      <block wx:if="{{config.showCollect ==0}}">
+        <image src="/image/star1.png" style="width:36rpx;height:36rpx;" data-collects="{{userInfo.collects}}" data-openid="{{userInfo.openid}}" bindtap="cancelCollectCard"> </image>
+      </block>
+      <view class="col-info-view">
+        <view class="col-info-lable">收藏：</view>
+        <view class="col-info-text">{{userInfo.collects}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!--更多-->
+  <view class="more-row">
+    <view class="more-row-lable">自我介绍</view>
+    <view class="more-row-info font-lightgray">{{userInfo.more_info}}</view>
+  </view>
+
+  <!--按钮-->
+  <view class="button-row">
+    <block wx:if="{{config.showCollect ==1}}">
+      <button type="primary" bindtap="collectCard" data-collects="{{userInfo.collects}}" data-openid="{{userInfo.openid}}">收藏到名片夹</button>
+    </block>
+    <block wx:if="{{config.showCollect ==0}}">
+      <button type="default" bindtap="cancelCollectCard" data-collects="{{userInfo.collects}}" data-openid="{{userInfo.openid}}">取消收藏</button>
+    </block>
+    <button type="default" bindtap="openMyCard">打开我的名片</button>
+  </view>
+
+  <!--container-->
+</scroll-view>

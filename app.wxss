@@ -1,0 +1,61 @@
+/**app.wxss**/
+
+.container {
+  height: 1255rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+
+.font-sky-blue {
+  color: deepskyblue;
+}
+
+.font-darkgray {
+  color: dimgrey;
+}
+
+.font-lightgray {
+  color: darkgray;
+}
+
+.font-red {
+  color: #f00;
+}
+
+.back-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius:25px;
+}
+.back-gray {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius:25px;
+}
+
+.back-blue {
+  background-color: #3d85c6;
+  border: 1px solid #3d85c6;
+  border-radius:25px;
+}
+
+.back-red {
+  background-color: #c00;
+  border: 1px solid #c00;
+  border-radius:25px;
+}
+
+.back-pink {
+  background-color: #f0f;
+  border: 1px solid #f0f;
+  border-radius:25px;
+}
+
+.back-green {
+  background-color: #0f0;
+  border: 1px solid #0f0;
+  border-radius:25px;
+}
+

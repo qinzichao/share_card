@@ -1,0 +1,117 @@
+.container {
+  background-color: #eee;
+}
+
+.userinfo {
+  width: 95%;
+  background-color: #fff;
+  margin: 25rpx;
+  color: black;
+}
+
+.userinfo-lable {
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+
+.userinfo-row {
+  display: flex;
+  flex-direction: row;
+
+  height: 60rpx;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+}
+
+.userinfo-header {
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 30rpx;
+  align-items: flex-end;
+  margin: 20rpx 0rpx;
+}
+
+.userinfo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 500rpx;
+  padding-bottom: 30rpx;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 10%;
+  margin-top:20rpx;
+}
+
+.nickname {
+  font-size: 50rpx;
+  margin-right: 20rpx;
+}
+
+.job {
+  font-size: 28rpx;
+}
+
+.mobile {
+  font-weight: bold;
+}
+
+
+
+.handle-row {
+  
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 0rpx;
+  align-items: center;
+  height: 140rpx;
+  font-size: 25rpx;
+}
+
+.handle-col-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  margin: 20rpx 0rpx;
+  border-right: 1rpx solid #eee;
+}
+
+.col-info-view {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.more-row {
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 140rpx;
+  font-size: 30rpx;
+  padding: 15rpx;
+}
+
+.more-row-lable {
+  margin-left: 25rpx;
+  margin-right: 20rpx;
+}
+
+.button-row {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.button-row button {
+  width: 95%;
+  margin-bottom: 20rpx;
+}
+.tel{
+  margin-left: 20rpx;
+}

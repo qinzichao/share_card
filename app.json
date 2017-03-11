@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/other/other",
+    "pages/collect/collect",
+    "pages/my/my",
+    
+    
+    "pages/edit/edit",
+    "pages/template/template"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "名片分享",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#000000",
+    "selectedColor": "#00EE00",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的名片",
+        "iconPath": "image/me2.png",
+        "selectedIconPath": "image/me1.png"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "名片夹",
+        "iconPath": "image/card2.png",
+        "selectedIconPath": "image/card1.png"
+      },
+      {
+        "pagePath": "pages/template/template",
+        "text": "模版市场",
+        "iconPath": "image/shop2.png",
+        "selectedIconPath": "image/shop1.png"
+      }
+    ]
+  },
+  "debug": true
+}

@@ -1,0 +1,15 @@
+<view class="container">
+  <text class="info">请点击选择您想使用的颜色</text>
+
+  <!--container-->
+  <block wx:key="templates" wx:for="{{templates}}" wx:for-index="item_index" wx:for-item="template_item">
+    <view class="list-row {{template_item.template}}" data-template="{{template_item.template}}" bindtap="selecteTemplate" data-index="{{item_index}}">
+      <block wx:if="{{template_item.isSelected==1}}">
+        <icon type="success" color="#20124d" size="30"></icon>
+      </block>
+    </view>
+  </block>
+  <button type="default" class="clear-button" bindtap="clearTemplate">不使用模版</button>
+
+  <!--container-->
+</view>
