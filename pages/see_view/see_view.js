@@ -111,4 +111,16 @@ Page({
     }
   },
 
+   //打开我的名片
+  openMyCard: function () {
+
+     wx.switchTab({
+          url: '/pages/my/my',
+          success: function (res) {
+            // success
+          }
+    });
+    
+  },
+
 })

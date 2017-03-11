@@ -21,8 +21,10 @@
         <view class="userinfo-name">
           <view class="nickName-row">
             <view class="nickName">{{user.nickname}}</view>
+            <block wx:if="{{user.mobile!=''}}">
              <image class="tel" catchtap="callPhone" data-phone="{{user.mobile}}" src="/image/tel1.png" style="width:36rpx;height:36rpx;"></image>
-
+             </block>
+             
           </view>
           <view class="userinfo-item">{{user.company}}</view>
         </view>

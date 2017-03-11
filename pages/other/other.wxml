@@ -21,9 +21,12 @@
     <!--userinfo-row-->
     <view class="userinfo-row">
       <view class="userinfo-lable font-lightgray ">电话</view>
-      <view bindtap="callPhone" data-phone="{{userInfo.mobile}}" class="mobile font-sky-blue">{{userInfo.mobile}}</view>
+      <view class="mobile font-sky-blue">{{userInfo.mobile}}</view>
 
-<image class="tel" catchtap="callPhone" data-phone="{{userInfo.mobile}}" src="/image/tel1.png" style="width:36rpx;height:36rpx;"></image>
+        <block wx:if="{{userInfo.mobile!=''}}">
+             <image class="tel" catchtap="callPhone" data-phone="{{userInfo.mobile}}" src="/image/tel1.png" style="width:36rpx;height:36rpx;"></image>
+             
+             </block>
 
 
     </view>

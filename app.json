@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/template/template",
     "pages/my/my",
+    "pages/template/template",
     "pages/see_collect/see_collect",
     "pages/see_love/see_love",
     "pages/see_view/see_view",

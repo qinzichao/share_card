@@ -1,5 +1,5 @@
 
-var see_view_list_fun = require("../../utils/see_view_list.js");
+var see_collect_list_fun = require("../../utils/see_collect_list.js");
 
 //获取应用实例
 var app = getApp()
@@ -27,7 +27,7 @@ Page({
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function (userInfo) {
 
-      see_view_list_fun.getList(that.showData)
+      see_collect_list_fun.getList(that.showData)
 
     });
 
@@ -109,6 +109,18 @@ Page({
         }
       })
     }
+  },
+
+   //打开我的名片
+  openMyCard: function () {
+
+     wx.switchTab({
+          url: '/pages/my/my',
+          success: function (res) {
+            // success
+          }
+    });
+    
   },
 
 })

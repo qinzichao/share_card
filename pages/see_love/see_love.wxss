@@ -11,10 +11,18 @@
 
 .search-part {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 80rpx;
+   position:relative;
+}
+.openMyCard{
+  width:100rpx;
+  height: 50rpx;
+  position:absolute;
+  left: 10rpx;
+  font-size: 20rpx;
 }
 
 .search-text {
@@ -66,5 +74,3 @@
 margin-left: 20rpx;
 margin-top: 20rpx;
 }
-
-

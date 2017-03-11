@@ -29,11 +29,11 @@ Page({
       'config.openid': "oL60Z0XXgqIYrStaVFoy8OUECHWM",
     });
 
-    // if (options.openid != "") {
-    //   this.setData({
-    //     'config.openid': options.openid,
-    //   })
-    // }
+    if (options.openid != "") {
+      this.setData({
+        'config.openid': options.openid,
+      })
+    }
 
 
   },
