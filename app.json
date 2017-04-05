@@ -1,5 +1,6 @@
 {
   "pages": [
+         "pages/find/find",
     "pages/my/my",
     "pages/template/template",
     "pages/see_collect/see_collect",
@@ -8,6 +9,7 @@
     "pages/other/other",
     "pages/collect/collect",
     "pages/edit/edit"
+
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",
@@ -19,8 +21,8 @@
   },
   "tabBar": {
     "position": "bottom",
-    "color": "#000000",
-    "selectedColor": "#00EE00",
+    "color": "#515151",
+    "selectedColor": "#0db517",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
@@ -41,6 +43,13 @@
         "text": "模版市场",
         "iconPath": "image/shop2.png",
         "selectedIconPath": "image/shop1.png"
+      }
+      ,
+      {
+        "pagePath": "pages/find/find",
+        "text": "找业务",
+        "iconPath": "image/find2.png",
+        "selectedIconPath": "image/find1.png"
       }
     ]
   },

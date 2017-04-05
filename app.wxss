@@ -1,10 +1,11 @@
 /**app.wxss**/
 
 .container {
-  height: 1255rpx;
+  height: 1140rpx;
   display: flex;
   flex-direction: column;
   background-color: #eee;
+
 }
 
 

@@ -37,6 +37,12 @@
     </view>
   </view>
 
+ <!--介绍-->
+  <view class="more-row">
+    <view class="more-row-lable">介绍</view>
+    <view class="more-row-info font-lightgray">{{userInfo.more_info}}</view>
+  </view>
+  
   <!--操作三项-->
   <view class="handle-row">
 
@@ -68,14 +74,17 @@
     </view>
   </view>
 
-  <!--更多-->
-  <view class="more-row">
-    <view class="more-row-lable">自我介绍</view>
-    <view class="more-row-info font-lightgray">{{userInfo.more_info}}</view>
-  </view>
+ 
 
   <!--按钮-->
   <view class="button-row">
     <button type="primary" bindtap="editCard">编辑名片</button>
   </view>
+
+  <view class="bottom-txt">
+    <view class="bottom-txt-info">点击右上角，分享我的名片</view>
+    <view class="bottom-txt-info">再次使用：发现-小程序-搜索“共享名片”</view>
+    <view class="bottom-txt-a"><image src="/image/pyq.png" style="width:30rpx;height:30rpx;vertical-align: middle; margin-right: 8px;"></image>可截图分享到朋友圈</view>
+  </view>
+
 </scroll-view>

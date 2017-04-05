@@ -1,6 +1,3 @@
-.container {
-  background-color: #eee;
-}
 
 .userinfo {
   width: 95%;
@@ -18,9 +15,10 @@
   display: flex;
   flex-direction: row;
   width: 80%;
-  height: 60rpx;
+  height: 100%;
   font-size: 28rpx;
   padding-left: 30rpx;
+  margin:0 0 20rpx 0;
 }
 
 .userinfo-header {
@@ -34,16 +32,15 @@
 .userinfo-name {
   display: flex;
   flex-direction: column;
-  
   width: 500rpx;
   padding-bottom: 30rpx;
 }
 
 .avatar {
+  margin-top: 20rpx;
   width: 128rpx;
   height: 128rpx;
   border-radius: 10%;
-  margin-top:20rpx;
 }
 
 .nickname {
@@ -75,12 +72,14 @@
 .mobile {
   font-weight: bold;
 }
-
-
+.more-info {
+  width: calc(100% - 120rpx);
+  margin-bottom: 20rpx;
+}
 
 .handle-row {
   width: calc(100% - 2px);
-  background-color: #fff;
+
   display: flex;
   flex-direction: row;
   margin: 30rpx 0rpx;
@@ -93,46 +92,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33%;
+  width: 32%;
   margin: 20rpx 0rpx;
   border-right: 1rpx solid #eee;
 }
 
-.col-info-view {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10rpx;
+.collect-btn{
+  /*background-image: url("/image/star1.png");
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-size:100rpx 100rpx;*/
+  width:150rpx;
+  height:100rpx;
+  background-color: rgba(0, 0, 0, 0); 
+  border: none;
+}
+.collect-btn::after{
+   border: none;
 }
 
-.more-row {
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  height: 155rpx;
-  font-size: 30rpx;
-  padding: 15rpx;
-}
 
-.more-row-lable {
-  margin-left: 25rpx;
-  margin-right: 20rpx;
-  width: 100rpx;
-  
-}
 
-.more-row-info {
-  width: calc(100% - 120rpx);
-}
-
-.button-row {
-  width: 100%;
-  margin-top: 20rpx;
-}
-
-.button-row button {
-  width: 95%;
-  margin-bottom: 20rpx;
-}
-.tel{
-  margin-left: 20rpx;
-}

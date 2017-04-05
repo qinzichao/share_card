@@ -11,9 +11,11 @@ App({
     selectedTemplate: "",//用户已选中的模版
     openid: "", //用户微信的openid
     API_Base_URL: "https://mp.87apk.com",//API地址
+    //微信模版消息的地址
+    weixin_template_notify_url: "https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?",
   },
 
-  
+
   //获取用户信息
   getUserInfo: function (cb) {
     var that = this

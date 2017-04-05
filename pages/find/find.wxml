@@ -1,0 +1,78 @@
+<scroll-view class="container" scroll-x="false" scroll-y="false">
+
+  <!--用户信息-->
+  <view class="userinfo {{selectedTemplate}}">
+
+    <!--userinfo-header-->
+    <view class="userinfo-header">
+
+      <!--userinfo-header-left-->
+      <view class="userinfo-name">
+        <view class="nickname">{{userInfo.nickname}}</view>
+        <view class="job font-darkgray">{{userInfo.job}}</view>
+      </view>
+
+      <!--userinfo-header-right-->
+      <view>
+        <block wx:if="{{userInfo.headimgurl!='' && userInfo.headimgurl!='undefined'}}">
+          <image class="avatar" src="{{userInfo.headimgurl}}" background-size="cover"></image>
+        </block>
+        <block wx:else>
+          <image class="avatar" src="/image/me1.png" background-size="cover"></image>
+        </block>
+      </view>
+    </view>
+
+    <!--userinfo-header-->
+
+    <!--userinfo-row-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray ">电话</view>
+      <view class="mobile font-sky-blue">{{userInfo.mobile}}</view>
+    </view>
+
+    <!--userinfo-row-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray">公司</view>
+      <view class="company">{{userInfo.company}}</view>
+    </view>
+
+    <!--userinfo-row-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray">邮箱</view>
+      <view class="email">{{userInfo.email}}</view>
+    </view>
+
+    <!--介绍-->
+    <view class="userinfo-row">
+      <view class="userinfo-lable font-lightgray">介绍</view>
+      <view class="more-info">{{userInfo.more_info}}</view>
+    </view>
+
+    <!--介绍-->
+  </view>
+
+  <!--操作项-->
+  <view class="handle-row">
+
+    <!--人气-->
+    <view class="handle-col-item" bindtap="findNextCard">
+      <image src="/image/next1.png" style="width:81rpx;height:81rpx;"></image>
+    </view>
+
+    <!--已赞-->
+    <view class="handle-col-item">
+      <image src="/image/heart1.png" style="width:54rpx;height:54rpx;" data-openid="{{userInfo.openid}}" bindtap="loveCard"></image>
+    </view>
+
+    <!--收藏-->
+    <view class="handle-col-item">
+      <form report-submit="true" bindsubmit="formSubmit">
+        <input type="text" name="openid" style="display:none" value="{{userInfo.openid}}" />
+        <button form-type="submit" class="collect-btn">
+          <image src="/image/star1.png" style="width:100rpx;height:100rpx;"></image>
+        </button>
+      </form>
+    </view>
+  </view>
+</scroll-view>

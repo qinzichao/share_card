@@ -30,8 +30,7 @@
 
 .userinfo-name {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
   width: 500rpx;
   padding-bottom: 30rpx;
 }
@@ -46,10 +45,27 @@
 .nickname {
   font-size: 50rpx;
   margin-right: 20rpx;
+  /*me*/
+
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .job {
   font-size: 28rpx;
+
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  /*me*/
+
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .mobile {
@@ -58,7 +74,7 @@
 
 
 .handle-row {
-  width: 100%;
+  width: calc(100% - 2px);
   background-color: #fff;
   display: flex;
   flex-direction: row;
@@ -87,7 +103,7 @@
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  height: 140rpx;
+  height: 155rpx;
   font-size: 30rpx;
   padding: 15rpx;
 }
@@ -95,6 +111,12 @@
 .more-row-lable {
   margin-left: 25rpx;
   margin-right: 20rpx;
+  width: 100rpx;
+  
+}
+
+.more-row-info {
+  width: calc(100% - 120rpx);
 }
 
 .button-row {
@@ -106,4 +128,21 @@
 .button-row button {
   width: 95%;
   margin-bottom: 20rpx;
+}
+
+.bottom-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-txt-info {
+  font-size: 24rpx;
+  margin-bottom: 5px;
+  color: #cdcdcd;
+  
+}
+.bottom-txt-a {
+  font-size: 28rpx;
+  color: #85838b;
+  margin-top: 5px;
 }
