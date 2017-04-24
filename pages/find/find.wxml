@@ -1,7 +1,7 @@
 <scroll-view class="container" scroll-x="false" scroll-y="false">
 
   <!--用户信息-->
-  <view class="userinfo {{selectedTemplate}}">
+  <view class="{{selectedTemplate}} userinfo">
 
     <!--userinfo-header-->
     <view class="userinfo-header">
@@ -44,7 +44,7 @@
     </view>
 
     <!--介绍-->
-    <view class="userinfo-row">
+    <view class="userinfo-row" style="min-height: 400rpx;">
       <view class="userinfo-lable font-lightgray">介绍</view>
       <view class="more-info">{{userInfo.more_info}}</view>
     </view>

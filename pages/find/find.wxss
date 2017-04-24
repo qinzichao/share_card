@@ -2,8 +2,19 @@
 .userinfo {
   width: 95%;
   background-color: #fff;
+  /*
+  background-image: url(../../image/kbg.png) ;
+  background-size: cover;
+
+  border:1px solid #53f2ed;
+  border-radius:15px;
+  */
   margin: 20rpx;
   color: black;
+  margin-bottom: 0rpx;
+  border-radius: 0px;
+  border: none;
+
 }
 
 .userinfo-lable {
@@ -19,6 +30,8 @@
   font-size: 28rpx;
   padding-left: 30rpx;
   margin:0 0 20rpx 0;
+  margin-bottom: 0rpx;
+  padding-bottom: 20rpx;
 }
 
 .userinfo-header {
@@ -78,14 +91,19 @@
 }
 
 .handle-row {
-  width: calc(100% - 2px);
+  width: calc(95% - 0px);
 
   display: flex;
   flex-direction: row;
   margin: 30rpx 0rpx;
+  margin-left: 2.5%;
+  margin-top: 0rpx;
   align-items: center;
   height: 140rpx;
   font-size: 25rpx;
+
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .handle-col-item {
@@ -94,7 +112,9 @@
   align-items: center;
   width: 32%;
   margin: 20rpx 0rpx;
+  /*
   border-right: 1rpx solid #eee;
+  */
 }
 
 .collect-btn{

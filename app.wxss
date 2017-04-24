@@ -1,11 +1,16 @@
 /**app.wxss**/
 
 .container {
-  height: 1140rpx;
+  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #eee;
+}
 
+
+page{
+    background-color: #eee;
 }
 
 
@@ -25,38 +30,62 @@
   color: #f00;
 }
 
+
 .back-white {
   background-color: #fff;
   border: 1px solid #fff;
   border-radius:25px;
+  margin-bottom: 30rpx;
 }
 .back-gray {
   background-color: #666;
   border: 1px solid #666;
   border-radius:25px;
+  margin-bottom: 30rpx;
 }
 
 .back-blue {
   background-color: #3d85c6;
   border: 1px solid #3d85c6;
   border-radius:25px;
+  margin-bottom: 30rpx;
 }
 
 .back-red {
   background-color: #c00;
   border: 1px solid #c00;
   border-radius:25px;
+  margin-bottom: 30rpx;
 }
 
 .back-pink {
   background-color: #f0f;
   border: 1px solid #f0f;
   border-radius:25px;
+  margin-bottom: 30rpx;
 }
 
 .back-green {
   background-color: #0f0;
   border: 1px solid #0f0;
   border-radius:25px;
+  margin-bottom: 30rpx;
 }
 
+.list_temp icon {
+  margin-top: 43rpx;
+}
+
+.flower-1 {
+  background-image: url(../../image/bg2.jpg) ;
+  background-size: 100%;
+  width: 100%;
+  margin: 0rpx 0rpx;
+}
+
+.flower-2 {
+  background-image: url(../../image/bg.jpg) ;
+  background-size: 100%;
+  width: 100%;
+  margin: 0rpx 0rpx;
+}

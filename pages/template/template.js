@@ -31,6 +31,14 @@ var alltemplates = [
     "isSelected": 0,
     "template": "back-green"
   },
+  {
+    "isSelected": 0,
+    "template": "flower-1"
+  },
+    {
+    "isSelected": 0,
+    "template": "flower-2"
+  },
 ];
 
 Page({

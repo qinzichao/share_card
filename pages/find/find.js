@@ -71,14 +71,14 @@ Page({
     }
   },
 
-formSubmit: function (e) {
+  formSubmit: function (e) {
     console.log('openid：', e.detail.value.openid)
     console.log('form发生了submit事件，携带数据为：', e.detail.formId);
 
     var formid = e.detail.formId;
     var openid = e.detail.value.openid;
 
-    find_func.updateUserCollectAdd(openid, formid,this.collectCardCallBack);
+    find_func.updateUserCollectAdd(openid, formid, this.collectCardCallBack);
 
   },
 
@@ -87,12 +87,18 @@ formSubmit: function (e) {
   //收藏后处理
   collectCardCallBack: function (res) {
 
+    var that = this;
+
     if (res.data.code == 1) {
+
       wx.showToast({
         title: '已放到名片夹！',
         icon: 'success',
-        duration: 3000
+        duration: 3000,
+        complete: function (res2) {
+        }
       })
+
     } else {
       wx.showToast({
         title: '不需要重复收藏！',
@@ -101,12 +107,16 @@ formSubmit: function (e) {
       })
     }
 
+    setTimeout(function () {
+      that.findNextCard();
+    }, 1000)
+
   },
 
 
   //通知完成
   sendNotifyCallBack: function (res) {
-   
+
   },
 
 
